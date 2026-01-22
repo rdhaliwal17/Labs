@@ -1,0 +1,23 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY encod IS
+	PORT(
+		w: in STD_LOGIC_VECTOR(3 DOWNTO 0);
+		y: out STD_LOGIC_VECTOR(1 DOWNTO 0);
+		z: out STD_LOGIC);
+END encod;
+
+ARCHITECTURE Behavior OF encod IS
+BEGIN 
+	PROCESS(w)
+	BEGIN
+		y <= "00";
+		IF w(1) = '1' THEN y <= "01"; END IF;
+		IF w(2) = '1' THEN y <= "10"; END IF;
+		IF w(3) = '1' THEN y <= "11"; END IF;
+		
+		Z <= '1';
+		IF w = "0000" THEN z <= '0'; END IF;
+	END PROCESS;
+END Behavior;
