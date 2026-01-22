@@ -17,4 +17,4 @@ Part B: Sequential Logic (Johnson Counter) This phase implements a sequential ci
 
 - Johnson Counter: A 3-bit Johnson Counter is implemented in VHDL (johns) using a state register (Qreg) that feeds back to the inputs.
 - Student ID Sequencer: The counter's output drives a CASE statement that cyclically displays the last 6 digits of the Student ID.
-- User Configuration: For Student ID 501180185, the system will output the sequence 1, 8, 0, 1, 8, 5 on the 7-segment display.
+- User Configuration: For Student ID, the system will output the sequence the last six digits on the 7-segment display.
