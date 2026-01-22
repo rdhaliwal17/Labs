@@ -13,7 +13,7 @@ BEGIN
 	PROCESS ( bcd )
 		BEGIN
 			CASE bcd IS             -- abcdefg
-				WHEN "0000" => leds <= "1111110";  -- 0
+			WHEN "0000" => leds <= "1111110";  -- 0
             WHEN "0001" => leds <= "0110000";  -- 1
             WHEN "0010" => leds <= "1101101";  -- 2
             WHEN "0011" => leds <= "1111001";  -- 3
@@ -33,4 +33,5 @@ BEGIN
 		END CASE;
 	END PROCESS;
 END Behavior;
+
 			
